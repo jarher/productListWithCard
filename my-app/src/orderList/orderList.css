@@ -1,0 +1,67 @@
+.product-cart-item {
+  position: relative;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--Rose-100);
+}
+.product-cart__data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.product-thumbnail {
+  width: 3.125rem;
+  border-radius: 0.3125rem;
+}
+.product-cart__name,
+.product-cart__quantity,
+.product-cart__total {
+  font-family: "Red-Hat-SemiBold", sans-serif;
+}
+.product-cart__name {
+  color: var(--Rose-900);
+}
+.product-cart__quantity {
+  color: var(--Red);
+  margin-right: 1rem;
+}
+.product-cart__price {
+  margin-right: 0.625rem;
+  color: var(--Rose-400);
+}
+.product-cart__total {
+  color: var(--Rose-500);
+}
+.product-cart__delete-button,
+.product-cart__delete-button span {
+  transition: all 0.3s ease-in-out;
+}
+.product-cart__delete-button {
+  position: absolute;
+  top: -0.625rem;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 1.225rem;
+  width: 1.225rem;
+  line-height: 1.225rem;
+  background-color: transparent;
+  border: 1px solid var(--Rose-500);
+  border-radius: 50%;
+  color: transparent;
+  overflow: hidden;
+}
+.product-cart__delete-button:hover {
+  outline: 1px solid var(--Rose-900);
+}
+.product-cart__delete-button:hover svg path {
+  fill: var(--Rose-900);
+}
+.product-cart__delete-button span {
+  z-index: -1;
+}
+@media screen and (min-width: 1024px) {
+  .orders {
+    overflow: auto;
+    max-height: 33vh;
+  }
+}

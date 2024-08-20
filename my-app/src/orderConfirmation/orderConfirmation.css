@@ -1,0 +1,95 @@
+.modal-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 5.9375rem;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.order-confirmation {
+  padding: 2.1875rem 1.5625rem;
+  background-color: white;
+  border-radius: 0.625rem 0.625rem 0 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 590px;
+  max-height: 42.8rem;
+  margin: auto;
+}
+.order-confirmation .orders-items-wrapper {
+  background-color: var(--Rose-50);
+  border-radius: 0.625rem;
+  padding-bottom: 1.5625rem;
+  margin-top: 2rem;
+}
+.order-confirmation .product-cart__data {
+  display: block;
+}
+.order-confirmation__title {
+  margin-top: 2.1875rem;
+  font-size: 2.1875rem;
+  padding-right: 5rem;
+  font-family: "Red-Hat-Bold", sans-serif;
+}
+.order-confirmation__title + span {
+  margin-top: 1rem;
+  color: var(--Rose-400);
+}
+.order-confirmation .orders {
+  padding: 1.5625rem 1.5625rem 0;
+  margin-bottom: 1.5625rem;
+}
+.product-thumbnail {
+  float: left;
+}
+.order-confirmation .product-cart-item:nth-child(1) {
+  padding-top: 0;
+}
+.order-confirmation .product-cart__name,
+.order-confirmation .product-prices__wrapper {
+  display: block;
+  padding-left: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+.order-confirmation .product-prices__wrapper {
+  height: 1.5625rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 83%;
+}
+.order-confirmation .product-cart__total {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.order-confirmation .clear {
+  clear: both;
+}
+.order-confirmation .order-total-wrapper {
+  padding: 0 1.5625rem;
+  margin-top: 0;
+}
+.fadeIn {
+  opacity: 1;
+}
+@media screen and (min-width: 600px) {
+  .modal-container {
+    padding-top: 0;
+  }
+  .order-confirmation {
+    border-radius: 0.625rem;
+  }
+}

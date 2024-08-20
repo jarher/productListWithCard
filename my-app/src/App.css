@@ -1,0 +1,23 @@
+.container {
+  padding: 2.1875rem 1.5625rem;
+  max-width: 1440px;
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.875rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding: 5.975rem 6.875rem;
+  }
+}
