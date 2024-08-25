@@ -1,16 +1,14 @@
-import { Cart } from "./cart/Cart";
-import { UseProduct } from "./context/AppContext.jsx";
-import { Desserts } from "./desserts/Desserts.jsx";
-import { OrderConfirmation } from "./orderConfirmation/orderConfirmation.jsx";
+import { Dessert } from "./components/dessert/Dessert";
+import { ShoppingCart } from "./components/shoppingCart/ShoppingCart";
+import { CartConfirmation } from "./components/cartConfirmation/CartConfirmation";
 import "./App.css";
 
 function App() {
-  const { isOpenOrderConfirm } = UseProduct();
   return (
-    <div className="container">
-      <Desserts />
-      <Cart />
-      {isOpenOrderConfirm && <OrderConfirmation />}
+    <div className="app__container">
+      <Dessert />
+      <ShoppingCart />
+      <CartConfirmation />
     </div>
   );
 }

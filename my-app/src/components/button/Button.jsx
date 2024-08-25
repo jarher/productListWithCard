@@ -1,3 +1,5 @@
+import "./button.css";
+
 export const Button = ({
   className,
   buttonHandler,

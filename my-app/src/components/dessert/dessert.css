@@ -1,0 +1,18 @@
+.dessert__container h1 {
+  font-family: "Red-Hat-Bold", sans-serif;
+}
+
+.dessert__card-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1024px) {
+  .dessert__container {
+    flex-basis: 50rem;
+  }
+  .dessert__container h1 {
+    font-size: 2.5rem;
+  }
+}

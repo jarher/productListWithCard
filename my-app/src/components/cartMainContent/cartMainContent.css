@@ -1,15 +1,15 @@
-.order-container-button {
+.cart-main-content__button {
   height: 3.125rem;
   line-height: 3.125rem;
-  width: 100%;
   background-color: var(--Red);
   color: var(--Rose-50);
   border: none;
   border-radius: 2.25rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   margin-top: 1.5625rem;
   transition: all 0.3s ease-in-out;
+  width: 100%;
 }
-.order-container-button:hover {
+.cart-main-content__button:hover {
   background-color: hsl(14, 86%, 32%);
 }

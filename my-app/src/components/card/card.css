@@ -1,0 +1,53 @@
+.card__container {
+  margin-top: 1.25rem;
+  width: 100%;
+}
+.card__header {
+  position: relative;
+  height: 15rem;
+}
+.card-image__container {
+  border-radius: 0.625rem;
+  height: 100%;
+  overflow: hidden;
+}
+.card__body {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.3rem;
+}
+.cart__body-title,
+.card__body-price {
+  font-family: "Red-Hat-Bold", sans-serif;
+}
+.cart__body-title {
+  color: var(--Rose-900);
+}
+.card__body-subtitle {
+  color: var(--Rose-400);
+  font-size: 0.95rem;
+}
+.card__body-price {
+  color: var(--Red);
+}
+.card__selected .card-image__container {
+  border: 3px solid var(--Red);
+}
+.card__selected .card__header-buttons-container {
+  border-color: var(--Red);
+}
+.card__selected .card__header-buttons-wrapper {
+  transform: translateY(-2.5rem);
+}
+@media screen and (min-width: 500px) {
+  .card__container {
+    flex-basis: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__container {
+    flex-basis: 32%;
+  }
+}

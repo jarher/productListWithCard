@@ -1,10 +1,11 @@
 import data from "../data.json";
-const { createContext, useContext, useState } = require("react");
+const { createContext, useContext, useState, useEffect } = require("react");
 
 const ProductContext = createContext(null);
 
 export const ProductProvider = ({ children }) => {
   const [isOpenOrderConfirm, setIsOpenOrderConfirm] = useState(false);
+  const [productCartDeleted, setProductCartDeleted] = useState("");
   const [cartProducts, setCartProducts] = useState([
     {
       thumbnail: "./images/image-tiramisu-thumbnail.jpg",
@@ -26,21 +27,24 @@ export const ProductProvider = ({ children }) => {
       quantity: 2,
     },
   ]);
-  const [nameProductDeleted, setNameProductDeleted] = useState("");
+  const [cardData] = useState([...data]);
 
-  const orderedProducts = (product) => setCartProducts(product);
-  const productDeleted = (name) => setNameProductDeleted(name);
+  useEffect(() => {
+    if (isOpenOrderConfirm) {
+      window.scroll(0, 0);
+    }
+  }, [isOpenOrderConfirm]);
 
   return (
     <ProductContext.Provider
       value={{
         cartProducts,
-        orderedProducts,
+        setCartProducts,
         setIsOpenOrderConfirm,
         isOpenOrderConfirm,
-        nameProductDeleted,
-        productDeleted,
-        data,
+        productCartDeleted,
+        setProductCartDeleted,
+        cardData,
       }}
     >
       {children}

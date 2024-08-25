@@ -1,0 +1,31 @@
+.cart-list__container,
+.cart-list__empty-cart {
+  display: flex;
+  flex-direction: column;
+}
+.cart-list__button,
+.cart-list__empty-cart {
+  width: 100%;
+}
+.cart-list__subtitle {
+  color: var(--Rose-500);
+}
+.cart-list__total-value {
+  font-size: 2rem;
+  color: var(--Rose-900);
+  font-family: "Red-Hat-Bold", sans-serif;
+}
+.cart-list__cart-message {
+  background-color: var(--Rose-50);
+  font-size: 0.775rem;
+  border-radius: 0.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.cart-list__empty-cart {
+  align-items: center;
+  color: var(--Rose-500);
+}

@@ -1,0 +1,90 @@
+.cart-item__container,
+.cart-list__total-wrapper,
+.col {
+  display: flex;
+}
+.cart-item__container,
+.cart-list__total-wrapper {
+  height: 5rem;
+}
+.cart-item__product-name,
+.cart-item__quantity,
+.col:nth-of-type(2) .cart-item__total {
+  font-family: "Red-Hat-Bold", sans-serif;
+}
+
+.cart-item__container {
+  border-bottom: 1px solid var(--Rose-100);
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+.cart-item__thumbnail-wrapper {
+  width: 3.125rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.col {
+  height: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.col:nth-of-type(1) {
+  flex: 4;
+  margin-left: 1.3rem;
+}
+.col:nth-of-type(2) {
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+.cart-item__product-name {
+  color: var(--Rose-900);
+}
+.cart-item__additional-data {
+  position: absolute;
+  bottom: 0;
+}
+.cart-item__quantity {
+  color: var(--Red);
+}
+.cart-item__price {
+  color: var(--Rose-400);
+  margin-left: 0.9375rem;
+}
+.col:nth-of-type(1) .cart-item__total {
+  font-family: "Red-Hat-SemiBold", sans-serif;
+  color: var(--Rose-500);
+}
+.cart-item__total {
+  color: var(--Rose-500);
+  margin-left: 0.625rem;
+}
+.cart-item__close-button {
+  position: relative;
+  border-radius: 50%;
+  height: 1.225rem;
+  width: 1.225rem;
+  background-color: transparent;
+  border: 1px solid var(--Rose-500);
+}
+.cart-item__close-button:hover {
+  border: 2px solid var(--Rose-900);
+}
+.cart-item__close-button:hover svg path {
+  fill: var(--Rose-900);
+}
+.cart-item__close-button span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.cart-list__total-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+.col:nth-of-type(2) .cart-item__total {
+  font-size: 1rem;
+  color: var(--Rose-900);
+}
