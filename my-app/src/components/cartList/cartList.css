@@ -1,13 +1,22 @@
 .cart-list__container,
-.cart-list__empty-cart {
+.cart-list__empty-cart,
+.cart-list__cart-message {
   display: flex;
+}
+.cart-list__container,
+.cart-list__empty-cart {
   flex-direction: column;
+}
+.cart-list__cart-message,
+.cart-list__empty-cart {
+  align-items: center;
 }
 .cart-list__button,
 .cart-list__empty-cart {
   width: 100%;
 }
-.cart-list__subtitle {
+.cart-list__subtitle,
+.cart-list__empty-cart {
   color: var(--Rose-500);
 }
 .cart-list__total-value {
@@ -19,13 +28,10 @@
   background-color: var(--Rose-50);
   font-size: 0.775rem;
   border-radius: 0.3125rem;
-  display: flex;
-  align-items: center;
   justify-content: center;
   padding: 1rem 0;
 }
 
 .cart-list__empty-cart {
-  align-items: center;
-  color: var(--Rose-500);
+  margin-top: 1.25rem;
 }
